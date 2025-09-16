@@ -1,0 +1,104 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+main{
+  max-width: 500px;
+}
+.result{
+  background-color: rgb(7, 167, 7);
+  padding: 0.5px 0px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.lost{
+  background-color:red;
+}
+.farewell{
+  background-color: purple
+}
+.languagesList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-block: 30px;
+}
+.languagesList>span{
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.languageGuess{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.languageGuess > span{
+  border-bottom: 1px solid white;
+  background-color:rgb(24, 23, 23) ;
+  padding: 5px 12px;
+  font-weight: 600;
+}
+.alphabetList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-block: 20px;
+}
+.alphabetList>button{
+  padding: 8px 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+.endGame> button{
+  padding: 10px 15px;
+  background-color: aqua;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.wrong{
+  background-color: red;
+}
+.correct{
+  background-color: green;
+}
+.chip{
+  position: relative;
+}
+span.lost::before{
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 0.85rem;
+  background-color: rgba(0,0,0,0.7);
+}
+
